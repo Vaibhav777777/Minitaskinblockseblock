@@ -1,0 +1,53 @@
+ANS:-1 Blockchain Basics
+
+A blockchain is a digital record-keeping system where information is stored across a network of computers in a secure and transparent way. Instead of keeping data in one place, it's spread across multiple nodes, making it nearly impossible to tamper with. Each block in the chain contains data, a timestamp, and a unique hash linked to the previous block, which ensures the integrity of the entire chain. This decentralized nature builds trust, especially where people or systems don’t know or fully trust each other. It’s most well-known for being the technology behind cryptocurrencies like Bitcoin, but its uses go far beyond that.
+
+Real-Life Use Cases:
+
+Supply Chain Management – Blockchain helps track products from origin to delivery, increasing transparency and reducing fraud.
+
+Digital Identity Verification – It allows secure and tamper-proof identity management, protecting users from identity theft.
+
+ANS:-2  
+
++--------------------------------------------------+
+|                    Block                         |
++--------------------------------------------------+
+| Timestamp     : 2025-06-06 14:35:00              |
+| Previous Hash : 7c4a8d09ca3762af61e59520943dc264 |
+| Nonce         : 18273                            |
+| Merkle Root   : a7f5f35426b927411fc9231b56382173 |
+|                                                  |
+| Data:                                            |
+| - Transaction 1: Alice → Bob (5 BTC)             |
+| - Transaction 2: Bob → Charlie (2 BTC)           |
+| - Transaction 3: Charlie → Dave (1 BTC)          |
++--------------------------------------------------+
+| Hash          : 0000b8743e2d671fe9fbb1a59e91fcb2 |
++--------------------------------------------------+
+
+
+The Merkle root is like a digital fingerprint for all the transactions in a block. It’s created by hashing pairs of transactions repeatedly until one final hash is left — this final hash is the Merkle root.
+
+Example:
+Let’s say there are 4 transactions in a block.
+
+First, each transaction is hashed.
+
+Then the hashes are grouped in pairs and hashed again.
+
+This continues until one final hash is produced — that’s the Merkle root.
+
+If any transaction changes, even slightly, the Merkle root will also change. This makes it easy to detect if the data has been tampered with — without needing to check every transaction manually.
+
+So, the Merkle root helps keep the block’s data trustworthy and tamper-proof.
+
+
+ANS:-3 Proof of Work (PoW):
+Proof of Work is a consensus mechanism where computers (called miners) compete to solve a difficult math puzzle to add a new block to the blockchain. The first one to solve it gets to add the block and earn a reward. This process takes a lot of computing power and energy, which is why it's often criticized for being environmentally unfriendly. The high energy cost makes it hard for anyone to take over the network, adding security.
+
+Proof of Stake (PoS):
+Proof of Stake replaces miners with validators who are chosen based on how much cryptocurrency they hold and are willing to "stake" as collateral. Instead of using energy to solve puzzles, validators are randomly picked to create new blocks, with higher stakes increasing their chances. This method is far more energy-efficient than PoW. If a validator cheats, they can lose their staked coins, which keeps them honest.
+
+Delegated Proof of Stake (DPoS):
+In Delegated Proof of Stake, users vote for a small group of trusted delegates who will validate blocks on their behalf. These delegates (or validators) are selected based on how many votes they receive from the community. This system is much faster and more scalable than PoW or PoS. However, it relies more on community trust and can become less decentralized if only a few delegates hold most of the voting power.
