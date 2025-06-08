@@ -56,3 +56,47 @@ def simulate_mining():
         print(block)
 
 simulate_mining()
+
+#Output :-
+
+Mining Block 0 with difficulty 4...
+Block 0 mined!
+Nonce: 16466
+Time Taken: 0.05 seconds
+Hash: 0000ed95cc7b9820ff30987e4c3bac06b46bd6d55bcef4f1f6f18700b51577c1
+
+Mining Block 1 with difficulty 4...
+Block 1 mined!
+Nonce: 74550
+Time Taken: 0.22 seconds
+Hash: 0000fd580e306a25aeff8d475edd6426c3e8ba997d1f3f4ef14e514d36faf7e4
+
+Mining Block 2 with difficulty 4...
+Block 2 mined!
+Nonce: 36803
+Time Taken: 0.11 seconds
+Hash: 0000d51a4a7c5fd33c2c68af73d80772156d25dee0fc93ad19353e30b1f34cca
+
+
+        Block 0:
+        Timestamp     : 1749393716.5219939
+        Data          : Genesis Block
+        Nonce         : 16466
+        Previous Hash : 0
+        Hash          : 0000ed95cc7b9820ff30987e4c3bac06b46bd6d55bcef4f1f6f18700b51577c1
+
+
+        Block 1:
+        Timestamp     : 1749393716.5768156
+        Data          : Block 1 data
+        Nonce         : 74550
+        Previous Hash : 0000ed95cc7b9820ff30987e4c3bac06b46bd6d55bcef4f1f6f18700b51577c1
+        Hash          : 0000fd580e306a25aeff8d475edd6426c3e8ba997d1f3f4ef14e514d36faf7e4
+
+
+        Block 2:
+        Timestamp     : 1749393716.796886
+        Data          : Block 2 data
+        Nonce         : 36803
+        Previous Hash : 0000fd580e306a25aeff8d475edd6426c3e8ba997d1f3f4ef14e514d36faf7e4
+        Hash          : 0000d51a4a7c5fd33c2c68af73d80772156d25dee0fc93ad19353e30b1f34cca
