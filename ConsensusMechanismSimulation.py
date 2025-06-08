@@ -64,3 +64,33 @@ for delegate in delegates:
     print(f"- {delegate['name']}: {delegate['votes']} votes")
 print(f"Selected: {dpos_winner['name']} with {dpos_winner['votes']} vote(s)")
 print("Logic: Users vote for delegates. The top-voted is chosen to produce blocks.\n")
+
+# output 
+
+PoW (Proof of Work)
+Miners and their power:
+- Miner A: Power 40
+- Miner B: Power 47
+- Miner C: Power 87
+Selected: Miner C with power 87
+Logic: The miner with the **most computational power** wins.
+
+PoS (Proof of Stake)
+Stakers and their stakes:
+- Staker X: Stake 356
+- Staker Y: Stake 238
+- Staker Z: Stake 994
+Selected: Staker Z with stake 994
+Logic: The staker with the **highest amount staked** is chosen.
+
+DPoS (Delegated Proof of Stake)
+Voters and their votes:
+- Voter A voted for Delegate 2
+- Voter B voted for Delegate 1
+- Voter C voted for Delegate 2
+Delegates and their vote counts:
+- Delegate 1: 1 votes
+- Delegate 2: 2 votes
+- Delegate 3: 0 votes
+Selected: Delegate 2 with 2 vote(s)
+Logic: Users vote for delegates. The top-voted is chosen to produce blocks.
