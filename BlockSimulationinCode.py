@@ -47,18 +47,18 @@ def tamper_chain(blockchain):
     blockchain[1].data = "Tampered data"
     blockchain[1].hash = blockchain[1].compute_hash()
 
-# 🔍 Check integrity
+
 def check_chain_validity(blockchain):
     for i in range(1, len(blockchain)):
         current = blockchain[i]
         previous = blockchain[i - 1]
 
         if current.previous_hash != previous.hash:
-            print(f"⚠️ Block {i} is INVALID due to broken hash link!")
+            print(f"Block {i} is INVALID due to broken hash link!")
         else:
             print(f"Block {i} is valid.")
 
-# 🚀 Run it
+
 blockchain = create_blockchain()
 print("Original Blockchain:\n")
 display_chain(blockchain)
@@ -122,4 +122,4 @@ Blockchain After Tampering:
 Validity Check:
 
 Block 1 is valid.
-⚠️ Block 2 is INVALID due to broken hash link!
+Block 2 is INVALID due to broken hash link!
